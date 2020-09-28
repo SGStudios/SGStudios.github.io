@@ -1,0 +1,854 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Roboto;
+}
+
+#nav {
+	background-color: firebrick;
+	color: #fff;
+}
+
+a {
+	cursor: pointer;
+}
+
+.about h2 {
+	font-size: 2.5rem;
+}
+
+.about p {
+	font-size: 1.3rem;
+}
+
+h1 {
+	font-family: Roboto;
+	font-weight: 900;
+	size: 3.5rem;
+	line-height: 1.5;
+	color: firebrick;
+}
+
+h2 {
+	font-family: Roboto;
+	font-weight: 700;
+	size: 3rem;
+	line-height: 1.5;
+}
+
+.icon {
+	color: firebrick;
+	margin-bottom: 1rem;
+}
+
+.social-icon {
+	color: white;
+}
+
+.white-section {
+	background-color: #fff;
+}
+
+.colored-section {
+	background-color: firebrick;
+}
+
+#portfolio {
+	padding-top: 5%;
+	position: relative;
+}
+
+.portfolio-title {
+	font-size: 1.5rem;
+}
+
+.portfolio-box {
+	padding: 4.5%;
+	text-align: center;
+}
+
+.container-fluid {
+	padding: 0.5% 15%;
+}
+
+/* Navigation bar */
+#nav {
+	padding-top: 72px;
+}
+
+.navbar {
+	padding: 0 0 0.5rem;
+	background-color: firebrick;
+	border-bottom: 2px solid white;
+	padding-bottom: 0px;
+}
+
+.navbar-brand {
+	font-size: 2.5rem;
+	font-family: Roboto;
+	font-weight: 400;
+
+}
+
+.nav-item {
+	padding: 0 18px;
+}
+
+.nav-link {
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 1.5rem;
+}
+
+#nav .nav-link.active {
+	text-decoration-line: underline;
+}
+
+/* Buttons */
+.download-button {
+	margin: 5% 3% 5% 0;
+}
+
+
+
+/* Skills styles */
+#skills {
+	padding: 6% 15%;
+	text-align: center;
+}
+
+#skills h2 {
+	color: firebrick;
+}
+
+.skills-box {
+	text-align: center;
+}
+
+
+/* Skill circles */
+/* Import the Google Font 'Lato' */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Container styles */
+
+.container {
+	text-align: center;
+}
+
+.chart {
+	position: relative;
+	display: inline-block;
+	color: #999;
+	font-size: 20px;
+	margin-right: 40px;
+	text-align: center;
+}
+
+.chart figcaption {
+	padding: 50px 25px;
+	width: 160px;
+	height: 160px;
+	border: 20px solid #f0f0f0;
+	border-radius: 100px;
+	line-height: 50px;
+}
+
+.chart img {
+	position: absolute;
+	max-width: 120px;
+	max-height: 120px;
+	width: 120px;
+}
+
+/* END Container styles */
+
+/* Colors for the circles and positions for the graphics */
+.skill-icon-circle {
+	top: 20px;
+	left: 20px;
+}
+
+.csharp+svg .outer {
+	stroke: #9B4F97;
+}
+
+.unity+svg .outer {
+	stroke: #000000;
+}
+
+.c4d+svg .outer {
+	stroke: #19246A;
+}
+
+.ae+svg .outer {
+	stroke: #DAA3FF;
+}
+
+.ps+svg .outer {
+	stroke: #00C9FF;
+}
+
+.html+svg .outer {
+	stroke: #F15931;
+}
+
+.css+svg .outer {
+	stroke: #008FD5;
+}
+
+.js+svg .outer {
+	stroke: #DAC147;
+}
+
+.bootstrap+svg .outer {
+	stroke: #563D7C;
+}
+
+.chart svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.outer {
+	fill: transparent;
+	stroke: #333;
+	stroke-width: 20;
+	stroke-dasharray: 534;
+	transition: stroke-dashoffset 1s;
+	-webkit-animation-play-state: running;
+
+	/* firefox bug fix - won't rotate at 90deg angles */
+	-moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+
+
+/* END Circle colors and graphic positions */
+
+
+/* Set the initial values for the animation */
+/* stroke-dashoffset is the amount the bar needs to fill 534 is the full circle at empty aka 0%
+534 - 95 = 439 (95 is an amount that got added to the circle, dnno from where, maybe the rotate?)
+439 / 20  = stroke-dashoffset for 5% = 21.95 
+1% = 4.39
+Formula:
+534 - (percentage*4.39)  = stroke-dashoffset
+534 - (25 * 4.39) = stroke offset for 25%
+
+*/
+.chart[data-percent='75'] .outer {
+	stroke-dashoffset: 204.75;
+	-webkit-animation: show75 2s;
+	animation: show75 2s;
+}
+
+.chart[data-percent='60'] .outer {
+	stroke-dashoffset: 270.6;
+	-webkit-animation: show60 2s;
+	animation: show60 2s;
+}
+
+.chart[data-percent='40'] .outer {
+	stroke-dashoffset: 358.4;
+	-webkit-animation: show40 2s;
+	animation: show40 2s;
+}
+
+.chart[data-percent='30'] .outer {
+	stroke-dashoffset: 402.3;
+	-webkit-animation: show30 2s;
+	animation: show30 2s;
+}
+
+/* END set initial animation values */
+
+/* Keyframes for the initial animation */
+/* stroke-dashoffset is the amount the bar needs to fill 534 is the full/top of the circle */
+@-webkit-keyframes show75 {
+	from {
+		stroke-dashoffset: 534;
+	}
+
+	to {
+		stroke-dashoffset: 204.75;
+	}
+}
+
+@keyframes show75 {
+	from {
+		stroke-dashoffset: 534;
+	}
+
+	to {
+		stroke-dashoffset: 204.75;
+	}
+}
+
+@-webkit-keyframes show60 {
+	from {
+		stroke-dashoffset: 537;
+	}
+
+	to {
+		stroke-dashoffset: 270.6;
+	}
+}
+
+@keyframes show60 {
+	from {
+		stroke-dashoffset: 537;
+	}
+
+	to {
+		stroke-dashoffset: 270.6;
+	}
+}
+
+@-webkit-keyframes show40 {
+	from {
+		stroke-dashoffset: 537;
+	}
+
+	to {
+		stroke-dashoffset: 358.4;
+	}
+}
+
+@keyframes show40 {
+	from {
+		stroke-dashoffset: 537;
+	}
+
+	to {
+		stroke-dashoffset: 358.4;
+	}
+}
+
+@-webkit-keyframes show30 {
+	from {
+		stroke-dashoffset: 537;
+	}
+
+	to {
+		stroke-dashoffset: 402.3;
+	}
+}
+
+@keyframes show30 {
+	from {
+		stroke-dashoffset: 537;
+	}
+
+	to {
+		stroke-dashoffset: 402.3;
+	}
+}
+
+/* END Keyframes for the initial animation */
+
+
+/* Skill bars */
+
+.skills {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.skillbar {
+	position: relative;
+	height: 35px;
+	padding-left: 35px;
+	text-align: right;
+}
+
+.skillbar-icon {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	font-weight: bold;
+	font-size: 13px;
+	color: #fff;
+	z-index: 100;
+	width: 35px;
+	height: 35px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.skillbar-fill {
+	background-color: firebrick;
+}
+
+/* 
+.skillbar-csharp {
+	background-color: #9B4F97;
+}
+
+.skillbar-unity {
+	background-color: #000000;
+}
+
+.skillbar-c4d {
+	background-color: #19246A;
+}
+
+.skillbar-ae {
+	background-color: #DAA3FF;
+}
+
+.skillbar-ps {
+	background-color: #00C9FF;
+}
+
+.skillbar-html {
+	background-color: #F15931;
+}
+
+.skillbar-css {
+	background-color: #008FD5;
+}
+
+.skillbar-javascript {
+	background-color: #DAC147;
+}
+
+.skillbar-bootstrap {
+	background-color: #563D7C;
+} */
+
+.progress-bar {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+
+
+
+.progress-bar span {
+	position: absolute;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 1rem;
+	right: 10px;
+	color: black;
+}
+
+.progress-bar span:nth-child(2) {
+	position: absolute;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 1rem;
+	left: 45px;
+	bottom: 50%;
+	color: #fff;
+	text-align: left;
+}
+
+@media only screen and (max-width: 500px) {
+	.progress-bar span:nth-child(2) {
+		display: none;
+	}
+}
+
+/* Showcase */
+
+#showcase {
+	text-align: center;
+	background-color: fff;
+	color: firebrick;
+}
+
+.showcase-image {
+	border: 5px solid white;
+}
+
+.services-column {
+	padding: 3% 2%;
+}
+
+.showcase-controls {
+	width: 50px;
+	height: 50px;
+}
+
+.showcase-info {
+	position: absolute;
+	right: 15.35%;
+	bottom: 4.2%;
+	left: 15.35%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.753);
+}
+
+.carousel-indicators li {
+	background-color: firebrick;
+}
+
+.carousel-inner {
+	width: 65%;
+	margin: 1% 17%;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B22222' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B22222' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-item {
+	padding: 1.5% 15%;
+	width: 100%;
+}
+
+/* services Section */
+
+#services {
+	padding: 1% 15% 0% 15%;
+}
+
+.services-btn {
+	background-color: firebrick;
+	color: #fff;
+	border-color: #fff;
+}
+
+.services-btn:hover {
+	background-color: #fff;
+	color: firebrick;
+	border-color: firebrick;
+}
+
+.services-title {
+	text-align: center;
+}
+
+.services-text {
+	text-align: center;
+}
+
+.services-title h3 {
+	font-size: 1.8rem;
+}
+
+/* About */
+
+#about {
+	padding: 7% 15%;
+	color: #fff;
+	text-align: left;
+}
+
+/* Socials */
+.social-icon {
+	margin: 20px 10px;
+	font-size: 1.5rem;
+}
+
+/* Resume */
+
+
+.resume-btn {
+	background-color: firebrick;
+}
+
+/* footer - contact */
+#footnote {
+	padding: 10px;
+}
+
+#contact {
+	text-align: center;
+	color: #fff;
+	padding-top: 50px;
+}
+
+.send-btn:hover {
+	background-color: firebrick;
+	color: #fff;
+	border-color: #fff;
+}
+
+.send-btn {
+	background-color: #fff;
+	color: firebrick;
+	border-color: firebrick;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.section-separator {
+	padding: 60px 0;
+	padding-top: 100px;
+}
+
+ul {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
+.portfolio-nav ul li {
+	display: inline-block;
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+.grid-item {
+	margin-bottom: 20px;
+}
+
+.mh-project-gallery .grid-item figure figcaption {
+	position: absolute;
+	padding: 15px;
+	height: 100%;
+	width: 100%;
+	top: auto;
+	left: 0;
+	color: #fff;
+	bottom: 0;
+	z-index: 10;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.mh-project-gallery .grid-item figure figcaption .sub-title {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 0;
+	font-size: 13px;
+	top: 50%;
+	margin-top: 30px;
+	transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+	-o-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+	-ms-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+	-moz-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+	-webkit-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	opacity: 0;
+	letter-spacing: 0px;
+}
+
+/* .mh-portfolio-modal {
+	display: none;
+	background: #282828;
+} */
+
+.mh-portfolio-modal-inner {
+	max-height: 500px;
+	overflow-y: scroll;
+	margin-right: 20px;
+}
+
+.mh-about-tag {
+	word-break: break-all;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.mh-about-tag ul li {
+	margin: 0px 6px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	padding: 4px 0px;
+	display: inline-block;
+}
+
+.mh-about-tag ul li span {
+	border: 1px solid firebrick;
+	padding: 4px 10px;
+	border-radius: 4px;
+}
+
+.mh-project-gallery .grid-item figure img {
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+img {
+	vertical-align: middle;
+	border-style: none;
+}
+
+.mh-project-gallery .grid-item figure {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.mh-project-gallery .grid-item figure figcaption:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	-webkit-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
+	-o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
+	-ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
+	-moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
+	-webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
+	z-index: -1;
+	opacity: 0;
+}
+
+.fa-search:before {
+	content: "\f002";
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+
+/* Gallery from  https://bootsnipp.com/snippets/GzKKE*/
+
+html {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+ul.filters {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 30px 0;
+}
+
+ul.filters>li {
+	list-style: none;
+	display: inline-block;
+}
+
+ul.filters>li>a {
+	display: block;
+	color: #434e5e;
+	text-decoration: none;
+	padding: 5px 20px;
+}
+
+ul.filters>li>a:hover {
+	background-color: #e6e9ed;
+}
+
+ul.filters>li.active>a {
+	color: #fff;
+	background-color: firebrick;
+}
+
+.card {
+	position: relative;
+	margin-bottom: 50px;
+	color: #000;
+	border-radius: 0;
+	border: 1px solid #eee;
+	background-color: #fff;
+	box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.075);
+}
+
+.card-head {
+	position: relative;
+	overflow: hidden;
+}
+
+/* .card-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color: rgba(67, 78, 94, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	-webkit-transition: ease-in-out 0.2s;
+	-moz-transition: ease-in-out 0.2s;
+	-ms-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+} */
+
+.card-hover {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(178, 34, 34, 0.9);
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 30px;
+	-webkit-transition: ease-in-out 0.2s;
+	-moz-transition: ease-in-out 0.2s;
+	-ms-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+}
+
+.card-body {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h4.title {
+	color: #434e5e;
+	font-size: 1.2rem;
+	margin-bottom: 0;
+}
+
+.card-btn {
+	margin-bottom: -40px;
+	font-size: 0.9rem;
+	background-color: #fff;
+	color: #222;
+	border: 1px solid #eee;
+	border-radius: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.card-btn:hover {
+	background-color: firebrick;
+	color: #fff;
+}

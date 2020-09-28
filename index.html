@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>SG Studios</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/shadow.css">
+
+  <!-- FontAwesome -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' />
+
+  <!-- fade in css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <!-- fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="110">
+
+  <section id="nav">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">SG Studios</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#nav">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </nav>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section class="white-section" id="showcase">
+    <div id="showcase-carousel" class="carousel slide" pause="hover" date-interval="false">
+      <ol class="carousel-indicators">
+        <li data-target="#showcase-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#showcase-carousel" data-slide-to="1"></li>
+        <li data-target="#showcase-carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <img class="showcase-image shadow-5 w-100" src="images/game/2018/Essendar.jpg">
+
+          <div class="carousel-caption d-none d-md-block showcase-info">
+            <h5>Essendar - Thesis Project</h5>
+            <p>Unity & C#</p>
+          </div>
+          <!-- <h2 class="showcase-text">Essendar - Thesis Project<br>Unity & C#</h2> -->
+        </div>
+        <div class="carousel-item container-fluid">
+          <img class="showcase-image shadow-5 w-100" src="images/game/2017/ocarinaPlayer.jpg">
+          <div class="carousel-caption d-none d-md-block showcase-info">
+            <h5>Ocarina Song Player</h5>
+            <p>Unity & Arduino</p>
+          </div>
+          <!-- <h2 class="showcase-text">Ocarina Song Player <br>Unity & Arduino </h2> -->
+        </div>
+        <div class="carousel-item container-fluid">
+          <img class="showcase-image shadow-5 w-100" src="images/motion/2015/typography.jpg">
+          <div class="carousel-caption d-none d-md-block showcase-info">
+            <h5>Typoghraphy Star Wars</h5>
+            <p>After Effects & Photoshop </p>
+          </div>
+          <!-- <h2 class="showcase-text">Typoghraphy Star Wars<br>After Effects & Photoshop</h2> -->
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#showcase-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon showcase-controls" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#showcase-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon showcase-controls" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="white-section" id="services">
+    <!-- 
+    <h2 class="section-heading">Portfolio</h2> -->
+
+    <div class="row">
+      <div class="services-column col-sm-12 col-md-6 col-xl-4">
+        <div class="card">
+          <div class="card-header services-title" style="padding-left: 0; padding-right: 0;">
+            <i class="icon fas fa-gamepad fa-4x"></i>
+            <h3>Game Development</h3>
+          </div>
+          <div class="card-body services-text">
+            <p>Unity</p>
+            <p>C#</p>
+            <p>Flash</p>
+            <a class="btn btn-lg btn-block services-btn" role="button" href="#portfolio" id="btnTakeMeGameDev"
+              data-filter=".gamedev">Take me
+              there!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-column col-sm-12 col-md-6 col-xl-4">
+        <div class="card">
+          <div class="card-header services-title">
+            <i class="icon fas fa-bullseye fa-4x"></i>
+            <h3>Graphic Design</h3>
+          </div>
+          <div class="card-body services-text filters">
+            <p>Photoshop</p>
+            <p>Illustrator</p>
+            <p>Cinema4D</p>
+            <a class="btn btn-lg btn-block services-btn" id="btnTakeMeGraphic" role="button" href="#portfolio"
+              data-filter=".graphic">Take me
+              there!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-column col-sm-12 col-xl-4">
+        <div class="card">
+          <div class="card-header services-title">
+            <i class="icon fas fa-film fa-4x"></i>
+            <h3>Motion Design</h3>
+          </div>
+          <div class="card-body services-text filters">
+            <p>After Effects</p>
+            <p>Cinema4D</p>
+            <p>Flash</p>
+            <a class="btn btn-lg btn-block services-btn" role="button" id="btnTakeMeMotion" href="#portfolio"
+              data-filter=".motion">Take me
+              there!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- About -->
+  <section class="colored-section" id="about">
+    <div data-aos="fade-up" data-aos-once="true" class="about">
+      <h2>About me</h2>
+      <p>
+        I really got interested into programming during the 2nd year of my 1st Bachelor where we had to make a video
+        game.<br>
+        Ever since I've always found it fascinating to bring objects to life through code.
+      </p>
+
+      <p>
+        When I'm not coding I enjoy playing video games where I often try to analyze the game mechanics and how they
+        were made.<br>
+        I have the same obsession with VFX, I've always liked to know how they were made.</p>
+      <p>
+
+    </div>
+
+  </section>
+
+  <!-- Skills / Resume -->
+  <section id="skills">
+    <!-- Circle grid animated for on large screens, credit to https://codepen.io/kyledws/pen/Gvelt -->
+    <h1>Skills</h1>
+    <div class="d-none d-lg-block">
+      <div class="row" data-aos="fade-up" data-aos-once="true">
+
+        <section class="container">
+
+          <!-- C# Chart -->
+          <figure class="chart" data-percent="75">
+            <figcaption></figcaption>
+            <img class="csharp skill-icon-circle" src="images/icons/CSharp.png">
+            <svg width="160" height="160">
+              <circle class="outer" cx="110" cy="80" r="70" transform="rotate(-90, 95, 95)" />
+            </svg>
+            <span>C# - 75%</span>
+          </figure>
+
+          <!-- Unity Chart -->
+          <figure class="chart" data-percent="60">
+            <figcaption></figcaption>
+            <img class="unity skill-icon-circle" src="images/icons/Unity.png">
+            <svg width="160" height="160">
+              <circle class="outer" cx="110" cy="80" r="70" transform="rotate(-90, 95, 95)" />
+            </svg>
+            <span>Unity - 60%</span>
+          </figure>
+
+
+          <!-- Javascript Chart -->
+          <figure class="chart" data-percent="40">
+            <figcaption>C4D</figcaption>
+            <img class="c4d skill-icon-circle" src="images/icons/C4D.png">
+            <svg width="160" height="160">
+              <circle class="outer" cx="110" cy="80" r="70" transform="rotate(-90, 95, 95)" />
+            </svg>
+            <span>Cinema 4D - 40%</span>
+          </figure>
+
+          <!-- after effects Chart -->
+          <figure class="chart" data-percent="40">
+            <figcaption>AE</figcaption>
+            <img class="ae skill-icon-circle" src="images/icons/AE.png">
+            <svg width="160" height="160">
+              <circle class="outer" cx="110" cy="80" r="70" transform="rotate(-90, 95, 95)" />
+            </svg>
+            <span>After Effects - 40%</span>
+          </figure>
+
+          <!-- photoshop Chart -->
+          <figure class="chart" data-percent="40">
+            <figcaption>PS</figcaption>
+            <img class="ps skill-icon-circle" src="images/icons/PS.png">
+            <svg width="160" height="160">
+              <circle class="outer" cx="110" cy="80" r="70" transform="rotate(-90, 95, 95)" />
+            </svg>
+            <span>Photoshop - 40%</span>
+          </figure>
+
+          <!-- HTML Chart -->
+          <figure class="chart" data-percent="30">
+            <figcaption>HTML</figcaption>
+            <img class="html skill-icon-circle" src="images/icons/HTML.png">
+            <svg width="160" height="160">
+              <circle class="outer" cx="110" cy="80" r="70" transform="rotate(-90, 95, 95)" />
+            </svg>
+            <span>HTML - 30%</span>
+          </figure>
+
+          <!-- css Chart -->
+          <figure class="chart" data-percent="30">
+            <figcaption>CSS</figcaption>
+            <img class="css skill-icon-circle" src="images/icons/Css.png">
+            <svg width="160" height="160">
+              <circle class="outer" cx="110" cy="80" r="70" transform="rotate(-90, 95, 95)" />
+            </svg>
+            <span>CSS - 30%</span>
+          </figure>
+
+          <!-- javascript Chart -->
+          <figure class="chart" data-percent="30">
+            <figcaption>JS</figcaption>
+            <img class="js skill-icon-circle" src="images/icons/Javascript.png">
+            <svg width="160" height="160">
+              <circle class="outer" cx="110" cy="80" r="70" transform="rotate(-90, 95, 95)" />
+            </svg>
+            <span>Javascript - 30%</span>
+          </figure>
+          <!-- Bootstrap chart -->
+          <figure class="chart" data-percent="30">
+            <figcaption></figcaption>
+            <img class="bootstrap skill-icon-circle" src="images/icons/Bootstrap.png">
+            <svg width="160" height="160">
+              <circle class="outer" cx="110" cy="80" r="70" transform="rotate(-90, 95, 95)" />
+            </svg>
+            <span>Bootstrap - 30%</span>
+          </figure>
+        </section>
+      </div>
+    </div>
+
+    <!-- Bars for on smaller screens -->
+    <div class="d-block d-lg-none">
+
+      <div class="skills" id="skills-start">
+        <img class="skillbar-icon" src="images/icons/CSharp.png">
+        <div class="progress skillbar">
+          <div class="progress-bar skillbar-fill skillbar-csharp" role="progressbar" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100">
+            <span>75%</span><span>C#</span></div>
+        </div>
+      </div>
+
+
+
+      <div class="skills">
+        <img class="skillbar-icon" src="images/icons/Unity.png">
+        <div class="progress skillbar">
+          <div class="progress-bar skillbar-fill skillbar-unity" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+            aria-valuemax="100">
+            <span>60%</span><span>Unity</span></div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img class="skillbar-icon" src="images/icons/C4D.png">
+        <div class="progress skillbar">
+          <div class="progress-bar skillbar-fill skillbar-c4d" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100">
+            <span>40%</span><span>Cinema 4D</span></div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img class="skillbar-icon" src="images/icons/AE.png">
+        <div class="progress skillbar">
+          <div class="progress-bar skillbar-fill skillbar-ae" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100">
+            <span>40%</span><span>After Effects</span></div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img class="skillbar-icon" src="images/icons/PS.png">
+        <div class="progress skillbar">
+          <div class="progress-bar skillbar-fill skillbar-ps" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100">
+            <span>40%</span><span>Photoshop</span></div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img class="skillbar-icon" src="images/icons/HTML.png">
+        <div class="progress skillbar">
+          <div class="progress-bar skillbar-fill skillbar-html" role="progressbar" aria-valuenow="30" aria-valuemin="0"
+            aria-valuemax="100">
+            <span>30%</span><span>HTML 5</span></div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img class="skillbar-icon" src="images/icons/Css.png">
+        <div class="progress skillbar">
+          <div class="progress-bar skillbar-fill skillbar-css" role="progressbar" aria-valuenow="30" aria-valuemin="0"
+            aria-valuemax="100">
+            <span>30%</span><span>CSS</span></div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img class="skillbar-icon" src="images/icons/Javascript.png">
+        <div class="progress skillbar">
+          <div class="progress-bar skillbar-fill skillbar-javascript" role="progressbar" aria-valuenow="30"
+            aria-valuemin="0" aria-valuemax="100">
+            <span>30%</span><span>Javascript</span></div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img class="skillbar-icon" src="images/icons/Bootstrap.png">
+        <div class="progress skillbar">
+          <div class="progress-bar skillbar-fill skillbar-bootstrap" role="progressbar" aria-valuenow="30"
+            aria-valuemin="0" aria-valuemax="100">
+            <span>30%</span><span>Bootstrap</span></div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <h2>See my full resume</h2>
+    <a class="btn btn-lg services-btn" href="resume/CV_SG_2020_RED.pdf" target="_blank"><i class="fas fa-file-pdf"></i>
+      Open PDF</a>
+
+    <hr style="margin-top: 127px;">
+  </section>
+
+  <section class="mh-portfolio white-section" id="portfolio">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-12">
+          <h1>Portfolio Gallery</h1>
+          <ul class="filters text-center">
+            <li class="active" data-filter="*"><a href="#!" id="lnkAll">All</a></li>
+            <li data-filter=".gamedev"><a href="#!" id="lnkGameDev">Game Development</a></li>
+            <li data-filter=".graphic"><a href="#!" id="lnkGraphic">Graphic Design</a></li>
+            <li data-filter=".motion"><a href="#!" id="lnkMotion">Motion Design</a></li>
+          </ul>
+
+          <div class="projects">
+            <div class="row">
+              <!-- Game Dev items -->
+
+              <div class="col-lg-4 item gamedev">
+                <div class="card">
+                  <a data-fancybox data-src="#essendar">
+                    <div class="card-head">
+                      <img href="#" src="images/game/2018/Essendar.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Game Dev</h2>
+                    </div> -->
+
+
+                      <div class="card-hover">
+                        <h2>Essendar</h2>
+                        <p>An online co-op platformer</p>
+                      </div>
+
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Unity, C#</h4>
+                      <!-- <a data-fancybox data-src="#mh" class="btn btn-lg card-btn">See More</a> -->
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item motion">
+                <div class="card">
+                  <a data-fancybox data-src="#fetch">
+                    <div class="card-head">
+                      <img src="images/motion/2017/BasicProgramExecution.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Motion</h2>
+                    </div> -->
+
+
+                      <div class="card-hover">
+                        <h2>Fetch, decode, execute cycle</h2>
+                        <p>An animation that explains the basic program execution cycle.</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">After Effects, Photoshop</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item gamedev">
+                <div class="card">
+                  <a data-fancybox data-src="#ocarina">
+                    <div class="card-head">
+                      <img src="images/game/2017/ocarinaPlayer.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Game Dev</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Ocarina player</h2>
+                        <p>A fanmade ocarina player</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Unity, C#, Arduino</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item gamedev">
+                <div class="card">
+                  <a data-fancybox data-src="#endlesswave">
+                    <div class="card-head">
+                      <img src="images/game/2017/endlesswaves.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Game Dev</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Endless wave test</h2>
+                        <p>Test project to test some mechanics.</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Unity, C#</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item gamedev">
+                <div class="card">
+                  <a data-fancybox data-src="#towerdefense">
+                    <div class="card-head">
+                      <img src="images/game/2017/towerDefense.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Game Dev</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Tower defense test</h2>
+                        <p>Test project to test some mechanics.</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Unity, C#</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item gamedev">
+                <div class="card">
+                  <a data-fancybox data-src="#pongbricks">
+                    <div class="card-head">
+                      <img src="images/game/2017/pongbricks.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Game Dev</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Pongbricks</h2>
+                        <p>Mobile bootcamp project</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Unity, C#</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item graphic">
+                <div class="card">
+                  <a data-fancybox data-src="#blacksmith">
+                    <div class="card-head">
+                      <img src="images/graphic/2016/BlacksmithShop.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Graphic</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Blacksmith shop</h2>
+                        <p>3D environement</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Cinema 4D</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item gamedev">
+                <div class="card">
+                  <a data-fancybox data-src="#korfball">
+                    <div class="card-head">
+                      <img src="images/game/2015/korfball.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Game Dev</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Korfball fan competition</h2>
+                        <p>School project</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Unity, C#</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item motion">
+                <div class="card">
+                  <a data-fancybox data-src="#typography">
+                    <div class="card-head">
+                      <img src="images/motion/2015/typography.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Motion</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Star Wars typography</h2>
+                        <p>Typography animation</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">After Effects, Photoshop</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item gamedev">
+                <div class="card">
+                  <a data-fancybox data-src="#consolewars">
+                    <div class="card-head">
+                      <img src="images/game/2014/consoleWars.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Game Dev</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Console wars</h2>
+                        <p>School project</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">.NET, C#</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item motion">
+                <div class="card">
+                  <a data-fancybox data-src="#soundvisual">
+                    <div class="card-head">
+                      <img src="images/motion/2014/soundVisual.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Motion</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Sound visualization</h2>
+                        <p>Project to learn about sound visualization.</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">After Effects</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item graphic">
+                <div class="card">
+                  <a data-fancybox data-src="#sporzaTwitter">
+                    <div class="card-head">
+                      <img src="images/graphic/2012/KoersTwitterSporza.png" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Graphic</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2 style="line-height: 1;">Sporza Twitter Banner</h2>
+                        <p>Internship assignment</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Illustrator</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item gamedev">
+                <div class="card">
+                  <a data-fancybox data-src="#StarWarsSpaceShooter">
+                    <div class="card-head">
+                      <img src="images/game/2011/spaceShooter.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Game Dev</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Star Wars fan game</h2>
+                        <p>Sidescrolling spaceshooter</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Flash, Actionscript 3</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item graphic">
+                <div class="card">
+                  <a data-fancybox data-src="#HouseMetro">
+                    <div class="card-head">
+                      <img src="images/graphic/2011/MetroMap_Huis.png" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Graphic</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Metro house map</h2>
+                        <p>House layout reimagined as a metro map.</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Illustrator, Photoshop</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item graphic">
+                <div class="card">
+                  <a data-fancybox data-src="#Xwing">
+                    <div class="card-head">
+                      <img src="images/graphic/2011/Xwing.png" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Graphic</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>X-wing fighter</h2>
+                        <p>Illustration</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Illustrator</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item graphic">
+                <div class="card">
+                  <a data-fancybox data-src="#Deathstar">
+                    <div class="card-head">
+                      <img src="images/graphic/2011/DeathStar.png" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Graphic</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Deathstar</h2>
+                        <p>Illustration</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Illustrator</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item graphic">
+                <div class="card">
+                  <a data-fancybox data-src="#Imperial">
+                    <div class="card-head">
+                      <img src="images/graphic/2011/Imperial.png" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Graphic</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2 style="line-height: 1.2; padding-top: 25px;">Imperial star destroyer</h2>
+                        <p>Illustration</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Illustrator</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item graphic">
+                <div class="card">
+                  <a data-fancybox data-src="#TIE">
+                    <div class="card-head">
+                      <img src="images/graphic/2011/Tie.png" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Graphic</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>TIE fighter</h2>
+                        <p>Illustration</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Illustrator</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item graphic">
+                <div class="card">
+                  <a data-fancybox data-src="#lightsaber">
+                    <div class="card-head">
+                      <img src="images/graphic/2011/Lightsaber.png" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Graphic</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Lightsaber</h2>
+                        <p>Illustration</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Illustrator</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item graphic">
+                <div class="card">
+                  <a data-fancybox data-src="#Vase">
+                    <div class="card-head">
+                      <img src="images/graphic/2010/3DVase.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Graphic</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>3D Vase</h2>
+                        <p>Project to learn about 3D</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Cinema 4D</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item graphic">
+                <div class="card">
+                  <a data-fancybox data-src="#Billiard">
+                    <div class="card-head">
+                      <img src="images/graphic/2010/Biljartbal.jpg" alt="" class="img-fluid card-img">
+                      <!-- <div class="card-overlay">
+                      <h2>Graphic</h2>
+                    </div> -->
+                      <div class="card-hover">
+                        <h2>Billiard ball</h2>
+                        <p>Project to learn about 3D</p>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h4 class="title">Cinema 4D</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Extra info pages for each work -->
+    <!-- Essendar -->
+    <div class="mh-portfolio-modal" id="essendar" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Essendar - An online co-op platformer</h2>
+            <p>Essendar was my finals project that I made together with another student.
+              The characters in game both represent us. The name Essendar was made by using the initials of both of
+              our
+              first names.
+              Stijn & Robin -> S & R -> Essendar
+            </p>
+
+            <p>It's an online co-op platformer where the players need to work together in order to advance.
+              Stijn & Robin get pulled into the game world of Essendar and during this process they end up
+              accidentally
+              killing
+              the actual heroes of the world. This leaves them with a choice to make, either they stay in the game
+              world
+              and
+              become the new heroes or they try and find a way to leave the game world, but in doing so they would
+              leave
+              the game world defenseless.
+            </p>
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Unity</span></li>
+                <li><span>C#</span></li>
+                <li><span>After Effects</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cXxGV0r9ed4" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <p></p>
+              <!-- <img src="images/game/2018/Essendar.png" alt="" class="img-fluid"> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fetch decode execute -->
+    <div class="mh-portfolio-modal" id="fetch" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Fetch, decode and excecute cycle</h2>
+            <p>This is an animation I made that illustrates the basic cycle of program execution.
+            </p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>After Effects</span></li>
+                <li><span>Photoshop</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/qtQaQC708F4" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ocarina player -->
+    <div class="mh-portfolio-modal" id="ocarina" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Ocarina Player</h2>
+            <p>A project for my embedded system course. Connecting a N64 controller to an arduino to play notes,
+              these notes get picked up by the microphone and analyzed based on their tone frequency. The game then
+              displays the note you played based on the frequency.
+              For convenience it's also possible to use keyboard input to play the notes using the arrowkeys and A.
+            </p>
+
+            <p>I'm a big Zelda fan and I really love the music of the series so making this was tons of fun.
+            </p>
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Unity</span></li>
+                <li><span>C#</span></li>
+                <li><span>Arduino</span></li>
+                <li><span>C++</span></li>
+                <li><span>Photoshop</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/C3bIYWHhCYI" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Endless wave test-->
+    <div class="mh-portfolio-modal" id="endlesswave" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Endless wave test</h2>
+            <p>I made some extra additions to a udemy course I followed to challenge myself.
+              <br><br>
+              I added HP bars, floating combat text, mage class with mana system and abilities, tab
+              targetting and XBOX 360 controller input.
+            </p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Unity</span></li>
+                <li><span>C#</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/VfcK6K1fOOA" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tower defense test -->
+    <div class="mh-portfolio-modal" id="towerdefense" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Tower defense test</h2>
+            <p>I made some extra additions to a udemy course I followed to challenge myself.
+              I added a tower range indicator, tower upgrade system and GUI feedback on enemy kills.
+            </p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Unity</span></li>
+                <li><span>C#</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/0VGUiFUhMfU" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pongbrick -->
+    <div class="mh-portfolio-modal" id="pongbricks" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Pongbricks</h2>
+            <p>This was a project made in 1 week during a mobile bootcamp where we learned about mobile development.
+
+              <br>
+
+              My main responsibility was making the different type of balls and how they interact with other objects.
+              Besides that I helped my teammates when
+              needed.
+            </p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Unity</span></li>
+                <li><span>C#</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/dQSg2H4iUVs" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blacksmith shop -->
+    <div class="mh-portfolio-modal" id="blacksmith" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Blacksmith shop</h2>
+            <p>A blacksmith shop made with Cinema 4D.
+            </p>
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Cinema 4D</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <a class="d-block mb-4" data-fancybox="blacksmith" href="images/graphic/2016/BlacksmithShop.jpg">
+                <img src="images/graphic/2016/BlacksmithShop.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Korfball -->
+    <div class="mh-portfolio-modal" id="korfball" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Korfball</h2>
+            <p>A group assignment where we had to make a game for the WC Korfball.
+            </p>
+
+            <p>I was responsible for the UI and the gameplay programming.
+            </p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Unity</span></li>
+                <li><span>C#</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-TVFhqTwcD8" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typography -->
+    <div class="mh-portfolio-modal" id="typography" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Typography</h2>
+            <p>A partial typography I made to the John Williams Is The Man tribute song.
+            </p>
+
+            <p>I had a lot of fun working on this.
+            </p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>After Effects</span></li>
+                <li><span>Photoshop</span></li>
+                <li><span>Illustrator</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/t5zk10hchNA" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Console Wars -->
+    <div class="mh-portfolio-modal" id="consolewars" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Console Wars</h2>
+            <p>Project I made for my first programming course in .NET with C#.
+            </p>
+
+            <p>The biggest challenge for this project were getting the healthbars to work properly with the paint method
+              and getting the animated gifs working.
+            </p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>.NET</span></li>
+                <li><span>C#</span></li>
+                <li><span>Photoshop</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/2sSTixiVhf8" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sound visualization-->
+    <div class="mh-portfolio-modal" id="soundvisual" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Sound visualization</h2>
+            <p>A sound visualization where the object reacts to the beat of the music.
+
+            </p>
+
+            <p>Inspired by a Video Copilot tutorial.</p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>After Effects</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/9tCoOGGz8bw" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sporza twitter banner-->
+    <div class="mh-portfolio-modal" id="sporzaTwitter" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Sporza banner</h2>
+            <p>A twitter banner made for Sporza during my internship.
+            </p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Illustrator</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <a class="d-block mb-4" data-fancybox="Sporza" href="images/graphic/2012/KoersTwitterSporza.png">
+                <img src="images/graphic/2012/KoersTwitterSporza.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Star Wars fan game -->
+    <div class="mh-portfolio-modal" id="StarWarsSpaceShooter" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Star Wars fan game</h2>
+            <p>A sidescrolling spaceshooter made with Illustrator and Flash.
+            </p>
+
+            <p>This was my first game project ever and it made me fall in love with programming.</p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Flash</span></li>
+                <li><span>Illustrator</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/tjUjkxt8Hmc" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- House layout-->
+    <div class="mh-portfolio-modal" id="HouseMetro" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Metro house map</h2>
+            <p>House layout reimagined as a metro map.
+            </p>
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Illustrator</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <a class="d-block mb-4" data-fancybox="house" href="images/graphic/2011/MetroMap_Huis.png">
+                <img src="images/graphic/2011/MetroMap_Huis.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Xwing-->
+    <div class="mh-portfolio-modal" id="Xwing" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>X-wing fighter</h2>
+            <p>An X-wing fighter drawn in illustrator based on the official blueprints.
+            </p>
+
+            <p>Made for my fan made sidescrolling spaceshooter</p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Illustrator</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <a class="d-block mb-4" data-fancybox="starwars" href="images/graphic/2011/Xwing.png">
+                <img src="images/graphic/2011/Xwing.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deathstar-->
+    <div class="mh-portfolio-modal" id="Deathstar" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Deathstar</h2>
+            <p>A deathstar drawn in illustrator based on the official blueprints.
+            </p>
+
+            <p>Made for my fan made sidescrolling spaceshooter</p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Illustrator</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <a class="d-block mb-4" data-fancybox="starwars" href="images/graphic/2011/Deathstar.png">
+                <img src="images/graphic/2011/DeathStar.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imperial star destroyer-->
+    <div class="mh-portfolio-modal" id="Imperial" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Imperial star destroyer</h2>
+            <p>An Imperial star destroyer drawn in illustrator based on the official blue prints.
+            </p>
+
+            <p>Made for my fan made sidescrolling spaceshooter</p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Illustrator</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <a class="d-block mb-4" data-fancybox="starwars" href="images/graphic/2011/Imperial.png">
+                <img src="images/graphic/2011/Imperial.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tie Fighter-->
+    <div class="mh-portfolio-modal" id="TIE" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>TIE fighter</h2>
+            <p>A TIE fighter drawn in illustrator based on the official blue prints.
+            </p>
+
+            <p>Made for my fan made sidescrolling spaceshooter. Due to these being downscaled a lot, less attention to
+              detail was given to these as you wouldn't notice all the fine details.</p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Illustrator</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <a class="d-block mb-4" data-fancybox="starwars" href="images/graphic/2011/Tie.png">
+                <img src="images/graphic/2011/Tie.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- lightsaber-->
+    <div class="mh-portfolio-modal" id="lightsaber" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Lightsaber</h2>
+            <p>A lightsaber made in Illustrator.
+            </p>
+
+            <p>Made for my fan made sidescrolling spaceshooter where it gets used a a loading bar.</p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Illustrator</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <a class="d-block mb-4" data-fancybox="starwars" href="images/graphic/2011/Lightsaber.png">
+                <img src="images/graphic/2011/Lightsaber.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vase-->
+    <div class="mh-portfolio-modal" id="Vase" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>3D vase</h2>
+            <p>Project to learn bout 3D.
+            </p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Cinema 4D</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <a class="d-block mb-4" data-fancybox="3D" href="images/graphic/2010/3DVase.jpg">
+                <img src="images/graphic/2010/3DVase.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Billiard-->
+    <div class="mh-portfolio-modal" id="Billiard" style="display: none;">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Billiard balls</h2>
+            <p>Project to learn bout 3D.
+            </p>
+
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Cinema 4D</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <a class="d-block mb-4" data-fancybox="3D" href="images/graphic/2010/Biljartbal.jpg">
+                <img src="images/graphic/2010/Biljartbal.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="colored-section" id="contact">
+    <div class="container-md">
+
+      <!-- Default form contact -->
+      <form class="text-center border border-light p-5" action="https://formspree.io/mrgobeak" method="POST" next="">
+        <p class="h4 mb-4">Contact me</p>
+        <!-- Name -->
+        <input type="text" name="name" class="form-control mb-4" placeholder="Your name" required>
+
+        <!-- Email -->
+        <input type="email" name="_replyto" class="form-control mb-4" placeholder="Your e-mail" required>
+
+
+        <input type="hidden" name="_subject" value="Portfolio contact" />
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <!-- Message -->
+        <div class="form-group">
+          <textarea class="form-control rounded-0" name="message" rows="3" placeholder="Message" required></textarea>
+        </div>
+
+
+        <div class="g-recaptcha" data-sitekey="6LeJCtEZAAAAAM28d445PrT6UFovo-kZDYH8XnnK"></div>
+        <!-- Send button -->
+        <button class="btn btn-info btn-block send-btn" type="submit">Send</button>
+        <input type="hidden" name="_next" value="https://www.google.be/" />
+      </form>
+      <!-- Default form contact -->
+
+
+      <p id="footnote">© Copyright 2020 Stijn Getteman</p>
+    </div>
+  </footer>
+
+  <script>
+    // Animate each skillbar
+
+    $(".skillbar-fill").each(function (i) {
+      $(this).animate({
+        width: $(this).attr('aria-valuenow') + '%'
+      }, 1500);
+    });
+
+    // var resume = document.querySelector('#skills-start');
+    // if (isInViewport(resume)) {
+    //   // Do something...
+    //   $(".skillbar-fill").each(function (i) {
+    //     $(this).animate({
+    //       width: $(this).attr('aria-valuenow') + '%'
+    //     }, 1500);
+    //   });
+    // }
+
+    // function isInViewport(elem) {
+    //   var bounding = elem.getBoundingClientRect();
+    //   return (
+    //     bounding.top >= 0 &&
+    //     bounding.left >= 0 &&
+    //     bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    //     bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    //   );
+    // };
+
+    $(document).ready(function () {
+
+      /* This is basic - uses default settings */
+
+      $("a#essendar").fancybox();
+
+      /* Using custom settings */
+
+      $("a#inline").fancybox({
+        'hideOnContentClick': false
+      });
+
+      /* Apply fancybox to multiple items */
+
+      $("a.group").fancybox({
+        'transitionIn': 'elastic',
+        'transitionOut': 'elastic',
+        'speedIn': 600,
+        'speedOut': 200,
+        'overlayShow': false
+      });
+
+      $("#lnkAll").trigger('click');
+
+      $("#btnTakeMeGraphic").click(function () {
+        $("#lnkGraphic").trigger('click');
+      })
+
+      $("#btnTakeMeGameDev").click(function () {
+        $("#lnkGameDev").trigger('click');
+      })
+
+      $("#btnTakeMeMotion").click(function () {
+        $("#lnkMotion").trigger('click');
+      })
+    });
+  </script>
+
+  <!-- fade in Js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="scripts/isotope.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
